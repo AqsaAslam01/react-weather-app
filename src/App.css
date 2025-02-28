@@ -1,18 +1,58 @@
 * {
-  margin: 0;
+  margin: auto;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 
 .app {
   background-image: url('./assets/cold.jpg');
   background-size: cover;
-  background-position: bottom;
+  background-position: center center;
   transition: 0.4 ease-out;
-
+  min-height: 100vh;
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
 }
 
 .app.warm {
   background-image: url('./assets/warm.jpg');
 }
 
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.search-bar {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 20px 20px;
+  border-style: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+main {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  min-height: 100vh;
+  width: 100%;
+}
+
+.location-box {
+  color: white;
+  font-size: large;
+  font-weight: 800;
+}
